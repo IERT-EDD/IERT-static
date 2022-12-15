@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+  <title>Applied Science and Humanity</title>
+
+
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg">
+  <link rel="apple-touch-icon" href="img/favicon.jpg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+
+
+  
+  <style>
+
+  .global-bg {
+    background-color: #f2f2f2 !Important;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .logo-img {
+    padding-top: 22px;
+    margin-top: 10px;
+    width: 170px;
+    height: 125px;
+  }
+
+  .header .name{
+    margin-top: 30px;
+  }
+
+  nav ul {
+    margin:00px ;
+    padding: 0px ;
+    list-style: none;
+    border-radius: 6px;
+  }
+
+  .nav a {
+    display: block;
+    background: #f2f2f2;
+    color:#000;
+    text-decoratiem: none;
+    padding: .8em 1.5em;
+    text-transform: uppercase;
+    font-size: 75%;
+    letter-spacing: 1.5px;
+    text-shadow: 0 -1px 0 #f2f2f2;
+    position: relative;
+  }
+
+  .nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #37B1C2, -1px 1px -1px 1px #fff,0 0 6px 3px #fff;
+    border-radius: 6px;
+  }
+
+  .nav li {
+    position: relative;
+  }
+
+  .nav > li {
+    float: left;
+    border-bottom:4px #aaa solid;
+    margin-right:1px;
+  }
+
+  .nav > li > a {
+    margin-bottom: 1px;
+  }
+
+  .nav > li:hover , .nav > li:hover >a {
+    background-color:#37B1C2;
+    border-bottom-color: orange;
+  }
+
+  .nav li:hover > a {
+    color: orange;
+    background-color:37B1C2;
+  }
+
+  .nav > li:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .nav > li:first-child > a {
+    border-radius: 4px 0 0 0;
+  }
+
+  .nav > li:last-child {
+    border-radius: 0 0 4px 0;
+    margin-right: 100px;
+  }
+
+  .nav >  li:last-child > a {
+    border-radius: 0 4px 0 0;
+  }
+
+  .nav li li a {
+    margin-top:1px;
+  }
+
+  .nav li a:first-child:nth-last-child(2):before {
+    content:"";
+    position: absolute;
+    height:0;
+    width:0;
+    border: 5px solid transparent;
+    top: 50%;
+    right: 5px;
+  }
+
+  /* submenu positioning*/
+  .nav ul {
+    position: absolute;
+    white-space: nowrap;
+    border-bottom:5px solid orange;
+    z-index: 1;
+    left: -99999em;
+  }
+
+  .nav > li:hover > ul {
+    left: auto;
+    padding-top: 5px;
+    min-width: 100%;
+  }
+
+  .nav > li li ul {
+    border-left:1px solid #37B1C2;
+  }
+
+  .nav > li li:hover > ul {
+    /*margin-left:1px */
+    left:100%;
+    top: -1px;
+  }
+
+  /* arrow hover styling*/
+  .nav > li > a:first-child:nth-last-child(2):before {
+    border-top-color: #aaa;
+  }
+
+  .nav > li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-bottom-color: orange;
+    margin-top: -5px;
+  }
+
+  .nav li li > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-right-color: orange;
+    right: 10px;
+  }
+  </style> 
+
+
+
+<style>
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+}
+
+</style>
+
+
+
+
+
+</head>
+
+
+
+
+  
+
+<body class="global-bg">
+<div class="container">
+<header class="header">
+<div class="row">
+<div class="col-md-3 col-sm-3">
+
+
+ <a href="http://www.iert.ac.in/">
+  <img class="rounded img-fluid logo-img" src ="img/IERT1.jpg" alt="logo" title="IERT ALLAHABAD" />
+
+   </a>
+        </div>
+        <div class="name col-md-9 col-sm-9">
+          <div class="row">
+            <div class="col-md-12">
+              <h3> Institute of Engineering and Rural Technology Allahabad</h3> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h3> अभियांत्रिकी एवं ग्रामीण प्रौद्योगिकी  संस्थान इलाहाबाद </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+
+
+
+
+<nav>
+<ul class="nav">
+  <li><a href="http://www.iert.ac.in/">HOME</a></li>
+<li> <a href="#" >INSTITUTE</a> 
+      <ul>
+     <li><a href="about us.html" >About Us</a></li>
+      <li><a href="about city.html" >About City</a></li>
+      <li><a href="vision and mission.html" >Vision and Mission</a></li>
+
+
+      <!--------------------
+<li><a href="the origin.html" >The Origin</a></li>
+
+------------------------------->
+
+<li><a href="#">Administration</a>
+<ul>
+
+<li><a href="controller.html" >Controller</a></li>
+<li><a href="finance Committee.html" >Finance Committee</a></li>
+<li><a href="director.html" >Director</a></li>
+<li><a href="cheif proctor.html" >Chief Proctor (EDD)</a></li>
+<li><a href="dean.html" >Dean (EDD)</a></li>
+<li><a href="head of department.html" >Head of Department (EDD)</a></li>
+<li><a href="office administration.html" >Office Administration (EDD)</a></li>
+<li><a href="Womens Grievance Portal.html" >Women Grievance Cell (EDD)</a></li>
+</ul>
+</li>
+
+
+
+
+
+<li><a href="photo gallery.html" >Photo Gallery</a></li>
+<li><a href="vidio gallery.html" >Video Gallery</a></li>
+<li><a href="institution holiday.html" >Institution Holiday</a></li>
+ </ul>
+</li>
+
+
+
+
+
+
+<li><a href="#">ACADEMICS</a>
+<ul>
+
+<li><a href="Academic calender.html" >Academic Calender</a></li>
+<li><a href="ug programme.html" >UG Program</a></li>
+
+</ul></li>
+
+<li><a href="#">Division</a>
+<ul>
+
+<li><a href="#"> Degree Division</a>
+<ul>
+<li><a href="cse.html" >Computer Science and Engg</a>
+<ul>
+<li><a href="cs.html">Syllabus</a></li>
+<li><a href="cs-faculty.html">Faculty</a></li>
+<li><a href="cs-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="ecee.html" >Electronics Engg</a>
+<ul>
+<li><a href="ece.html">Syllabus</a></li>
+<li><a href="ece-faculty.html">Faculty</a></li>
+<li><a href="ece-lab.html">Lab</a></li>
+</ul>
+</li>
+
+
+<li><a href="ipe.html" >Industrial & Production Engg</a>
+<ul>
+<li><a href="ip.html">Syllabus</a></li>
+<li><a href="ip-faculty.html">Faculty</a></li>
+<li><a href="ip-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="ice.html" >Instrumentation & Control Engg</a>
+<ul>
+<li><a href="ic.html">Syllabus</a></li>
+<li><a href="ic-faculty.html">Faculty</a></li>
+<li><a href="ic-lab.html">Lab</a></li>
+</ul>
+</li>
+<li><a href="civil.html" >Civil Engg</a>
+<ul>
+<li><a href="c-course.html">Syllabus</a></li>
+<li><a href="civil-faculty.html">Faculty</a></li>
+<li><a href="civil.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="elec.html" >Electrical Engg</a>
+<ul>
+<li><a href="ee.html">Syllabus</a></li>
+<li><a href="ee-faculty.html">Faculty</a></li>
+<li><a href="ee-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="mech.html" >Mechanical Engg</a>
+<ul>
+<li><a href="me-course.html">Syllabus</a></li>
+<li><a href="me-faculty.html">Faculty</a></li>
+<li><a href="me-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="applied.html" >Applied Science and humanity</a>
+<ul>
+
+<li><a href="a-faculty.html">Faculty</a></li>
+<li><a href="ap-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="manag.html">Management</a>
+<ul>
+
+<li><a href="m-faculty.html">Faculty</a></li>
+
+</ul>
+</li>
+
+</ul></li>
+
+<li><a href="http://iertonline.org/" target="_blank">Diploma Division</a></li>
+</ul></li>
+
+<li><a href="#">Facility</a>
+<ul>
+<li><a href="#">Library</a>
+<ul>
+<li><a href="central.html" >Central Library</a></li>
+<li><a href="reference.html" >Reference Library</a></li>
+<li><a href="https://ndl.iitkgp.ac.in/" target="_blank" >National Digital Library</a></li>
+
+
+
+</ul></li>
+
+<li><a href="health center.html" >Health Center</a></li>
+<li><a href="hostel.html" >Hostels</a>
+<ul>
+<li><a href="warden.html" >Warden</a></li>
+</ul></li>
+
+<li><a href="banking.html" >Banking</a></li>
+
+</ul></li>
+
+
+
+<li><a href="contact us.html" >Contact Us</a> </li>
+<li></li>
+
+</ul>
+</nav>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </header>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+          <div class="row-fluid">
+            <div id="fav-breadcrumbs" class="span12">
+              <div class="moduletable" >
+<ul class="breadcrumb">
+  <li class="active"><span class="divider icon-location"></span></li>
+
+  <li><a href="http://www.iert.ac.in/" class="pathway">Home</a><span class="divider">&gt;</span></li>
+
+  
+  <li><a href="#" class="pathway">Division</a><span class="divider">&gt;</span></li>
+ 
+  <li><a href="#" class="pathway">Degree Division</a><span class="divider">&gt;</span></li>
+ 
+  
+
+  <li class="active"><span>Applied Science and Humanity</span>
+  </li>
+</ul>
+</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+ 
+ <main class="mt-5">
+      <div class="row">
+
+
+
+
+
+
+       
+          <div class="col-md-3 col-sm-3">
+
+
+          <div class="list-group" id="list-tab" role="tablist">
+       
+           
+ <a class="list-group-item list-group-item-action" href="Faculty Recruitment.html">Recruitment </a>
+
+           
+
+ <a class="list-group-item list-group-item-action" href="Anti Ragging.html">Anti Ragging</a>
+
+<a class="list-group-item list-group-item-action" href="computer center.html" >Computer Center</a>
+
+
+
+
+
+<details>
+<summary class="list-group-item list-group-item-action"> Student Corner</summary> 
+
+
+<a class="list-group-item list-group-item-action" href="Notice Board.html">Notice</a>
+
+ <a class="list-group-item list-group-item-action " href="Technovation.html">Technovation-2K18</a>
+
+<a class="list-group-item list-group-item-action " href="Udbhav.html">Udbhav-2K17</a>
+
+<a class="list-group-item list-group-item-action " href="Achievement.html">Achievement</a>
+
+<a class="list-group-item list-group-item-action " href="Document Formats.html">Document Formats</a>
+
+            </details>
+
+
+
+
+
+<a class="list-group-item list-group-item-action" href="Alumni.html">Alumni</a>
+
+
+ <a class="list-group-item list-group-item-action" href="Placements.html">Placements</a>
+
+<a class="list-group-item list-group-item-action" href="rc.html">Research and Consultency</a>
+
+<a class="list-group-item list-group-item-action" href="Faculty Corner.html">Faculty Corner</a>
+
+
+
+
+            <details> 
+
+
+<summary class="list-group-item list-group-item-action"> Important Links</summary> 
+
+
+
+<a class="list-group-item list-group-item-action" href="https://www.aicte-india.org/"  target="_blank" /> AICTE</a>
+
+
+  <a class="list-group-item list-group-item-action " href="http://csirhrdg.res.in/" target="_blank" /> CSIR</a>
+
+  <a class="list-group-item list-group-item-action" href="https://www.online-inspire.gov.in/" target="_blank" /> DST</a>
+
+  <a class="list-group-item list-group-item-action " href="http://mhrd.gov.in/" target="_blank" /> MHRD</a>
+
+  <a class="list-group-item list-group-item-action" href="https://ugc.ac.in/" target="_blank" /> UGC</a>
+
+            </details> 
+
+
+
+<a class="list-group-item list-group-item-action" href="Downloads.html">Downloads</a>
+
+            
+ <a class="list-group-item list-group-item-action " href="Administration Notifications.html">Administration Notifications</a>
+
+ <a class="list-group-item list-group-item-action" href="Achievements Awards.html">Achievements/Awards</a>
+
+ <a class="list-group-item list-group-item-action" href="rti.html">RTI Act</a>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-9 col-sm-9">
+<div class="card">
+<div class="card-body">
+    <div class="row">
+
+
+
+
+
+
+
+
+
+<h3>Applied Science and Humanity</h3><hr>
+
+
+<div style="text-align: justify;">
+
+
+<!----------------------------------------------------------
+
+
+
+
+ <h5> Applied Science</h5>
+ <p>
+ The Department of Applied Science has got qualified and experienced faculty members. Most of them have Ph.D. from reputed institute like IISc, IIT’s, and NIT’s. Department Applied Science consist of several labs such as physics and chemistry and skilled Instructors. </p>
+
+<h6>Vision: </h6>
+
+ To empower and boost studies, research, technology incubation, product innovation, and extension work in the department.
+
+
+
+
+<h6>Mission:</h6>
+
+ To imparting top quality education to the students to build their aptitude and improving their skills to make them globally competitive engineers. To offer the students with academic environment of excellence, leadership, ethical guidelines and lifelong learning needed for a long productive career.
+ 
+
+<hr>
+<h5>Humanities</h5>
+
+<p>
+In the current global scenario, engineers are now required to have an in-depth understanding of the markets and how changes in these markets affect their bottom line. Department of Humanities of IERT established with the vision to develop managerial & economics skills amongst students in order to retain competitive advantage and market share.</p>
+
+<h6>Emphasis Areas:</h6><p>
+<li>   Develop in depth understanding of market.
+<li>   Emphasis on mechanism of capital stock, opportunity cost, net present value.
+<li>   Develop the skill of revenue analysis, calculating the value of investment, basic cost.
+
+
+
+</p>
+<h5>Vision and Mission:</h5>
+<p>
+  Deliver highly employable students with strong analytical skills, creative intelligence, entrepreneurial and organizational skills for solving complex Economic-, management-, policy-and organizational problems in a global and frequently changing environment and providing a platform to provide leading managers embed with complex economic qualities which can contribute to stimulating the economic and managerial performance of organizations.
+
+</p>
+</li></li></li></p></div>
+</div>
+------------------------------------------------------------->
+
+
+
+<p>Department of Applied Sciences and Humanities is one of the crucial department of the IERT. It imparts excellent quality teaching and learning in the area of Applied Sciences (Mathematics, Physics, and Chemistry) and Humanities (Professional Communication, Human values, and Professional Ethics & Environmental Science) for the future technocrats of all streams (CSE, EL, IPE, ICE, CE, EE, and ME). The Department of Applied Sciences and Humanities aims to provide a strong foundation in the fundamental sciences. Students of B. Tech are provided with the basic tools of analysis as well as the knowledge of the principles on which engineering is based. The Department also strives to instill the scientific temper and the spirit of inquiry in the students. It encourages the students to understand and apply the physical laws to the development of their fields of study. The Department has well-equipped laboratories for physics, Chemistry, and Communication Skills. The Department of Applied Sciences and Humanities is responsible for strengthening the fundamental aspects and developing the overall personality of the aspiring engineers. The department can boast of its highly qualified, experienced, and dedicated faculties.</p>
+
+<br><br><br><br><br><br><br><br>
+
+
+
+</div></div></div></div></main>
+   
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.ico" alt="image not found" height="80" width="80" />
+</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

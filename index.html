@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Home</title>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg">
+  <link rel="apple-touch-icon" href="img/favicon.jpg"/>   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+ 
+
+
+
+  <style>
+
+  .global-bg {
+    background-color: #f2f2f2 !Important;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .logo-img {
+    padding-top: 22px;
+    margin-top: 10px;
+    width: 170px;
+    height: 125px;
+  }
+
+  .header .name{
+    margin-top: 30px;
+  }
+
+  nav ul {
+    margin:00px ;
+    padding: 0px ;
+    list-style: none;
+    border-radius: 6px;
+  }
+
+  .nav a {
+    display: block;
+    background: #f2f2f2;
+    color:#000;
+    text-decoratiem: none;
+    padding: .8em 1.5em;
+    text-transform: uppercase;
+    font-size: 75%;
+    letter-spacing: 1.5px;
+    text-shadow: 0 -1px 0 #f2f2f2;
+    position: relative;
+  }
+
+  .nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #37B1C2, -1px 1px -1px 1px #fff,0 0 6px 3px #fff;
+    border-radius: 6px;
+  }
+
+  .nav li {
+    position: relative;
+  }
+
+  .nav > li {
+    float: left;
+    border-bottom:4px #aaa solid;
+    margin-right:1px;
+  }
+
+  .nav > li > a {
+    margin-bottom: 1px;
+  }
+
+  .nav > li:hover , .nav > li:hover >a {
+    background-color:#37B1C2;
+    border-bottom-color: orange;
+  }
+
+  .nav li:hover > a {
+    color: orange;
+    background-color:37B1C2;
+  }
+
+  .nav > li:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .nav > li:first-child > a {
+    border-radius: 4px 0 0 0;
+  }
+
+  .nav > li:last-child {
+    border-radius: 0 0 4px 0;
+    margin-right: 100px;
+  }
+
+  .nav >  li:last-child > a {
+    border-radius: 0 4px 0 0;
+  }
+
+  .nav li li a {
+    margin-top:1px;
+  }
+
+  .nav li a:first-child:nth-last-child(2):before {
+    content:"";
+    position: absolute;
+    height:0;
+    width:0;
+    border: 5px solid transparent;
+    top: 50%;
+    right: 5px;
+  }
+
+  /* submenu positioning*/
+  .nav ul {
+    position: absolute;
+    white-space: nowrap;
+    border-bottom:5px solid orange;
+    z-index: 1;
+    left: -99999em;
+  }
+
+  .nav > li:hover > ul {
+    left: auto;
+    padding-top: 5px;
+    min-width: 100%;
+  }
+
+  .nav > li li ul {
+    border-left:1px solid #37B1C2;
+  }
+
+  .nav > li li:hover > ul {
+    /*margin-left:1px */
+    left:100%;
+    top: -1px;
+  }
+
+  /* arrow hover styling*/
+  .nav > li > a:first-child:nth-last-child(2):before {
+    border-top-color: #aaa;
+  }
+
+  .nav > li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-bottom-color: orange;
+    margin-top: -5px;
+  }
+
+  .nav li li > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-right-color: orange;
+    right: 10px;
+  }
+  </style> 
+
+
+
+
+  <style>
+
+
+div.gallery {
+    margin: 4px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+  background: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
+
+
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+}
+
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myModal").modal('show');
+  });
+</script>
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body class="global-bg">
+<div class="container">
+<header class="header">
+<div class="row">
+<div class="col-md-3 col-sm-3">
+
+
+ <a href="http://www.iert.ac.in/">
+<img class="rounded img-fluid logo-img" src ="img/IERT1.jpg" alt="logo" title="IERT ALLAHABAD" />
+
+   </a>
+        </div>
+        <div class="name col-md-9 col-sm-9">
+          <div class="row">
+            <div class="col-md-12">
+              <h3> Institute of Engineering and Rural Technology, Prayagraj (Allahabad)</h3> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h3> अभियांत्रिकी एवं ग्रामीण प्रौद्योगिकी  संस्थान , प्रयागराज (इलाहाबाद) </h3>
+
+ 
+
+
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+
+
+
+
+<nav>
+<ul class="nav">
+  <li><a href="http://www.iert.ac.in/">HOME</a></li>
+<li> <a href="#" >INSTITUTE</a> 
+      <ul>
+     <li><a href="about us.html" >About Us</a></li>
+      <li><a href="about city.html" >About City</a></li>
+      <li><a href="vision and mission.html" >Vision and Mission</a></li>
+
+
+      <!--------------------
+<li><a href="the origin.html" >The Origin</a></li>
+
+------------------------------->
+
+<li><a href="#">Administration</a>
+<ul>
+
+<li><a href="controller.html" >Controller</a></li>
+<li><a href="finance Committee.html" >Finance Committee</a></li>
+<li><a href="director.html" >Director</a></li>
+<li><a href="cheif proctor.html" >Chief Proctor (EDD)</a></li>
+<li><a href="dean.html" >Dean (EDD)</a></li>
+<li><a href="head of department.html" >Head of Department (EDD)</a></li>
+<li><a href="office administration.html" >Office Administration (EDD)</a></li>
+<li><a href="Womens Grievance Portal.html" >Women Grievance Cell (EDD)</a></li>
+</ul>
+</li>
+
+
+
+
+
+<li><a href="photo gallery.html" >Photo Gallery</a></li>
+<li><a href="vidio gallery.html" >Video Gallery</a></li>
+<li><a href="institution holiday.html" >Institution Holiday</a></li>
+ </ul>
+</li>
+
+
+
+
+
+
+<li><a href="#">ACADEMICS</a>
+<ul>
+
+<li><a href="Academic calender.html" >Academic Calender</a></li>
+<li><a href="ug programme.html" >UG Program</a></li>
+
+</ul></li>
+
+<li><a href="#">Division</a>
+<ul>
+
+<li><a href="#">Degree Division</a>
+<ul>
+<li><a href="cse.html" >Computer Science and Engg</a>
+<ul>
+<li><a href="cs.html">Syllabus</a></li>
+<li><a href="cs-faculty.html">Faculty</a></li>
+<li><a href="cs-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="ecee.html" >Electronics Engg</a>
+<ul>
+<li><a href="ece.html">Syllabus</a></li>
+<li><a href="ece-faculty.html">Faculty</a></li>
+<li><a href="ece-lab.html">Lab</a></li>
+</ul>
+</li>
+
+
+<li><a href="ipe.html" >Industrial & Production Engg</a>
+<ul>
+<li><a href="ip.html">Syllabus</a></li>
+<li><a href="ip-faculty.html">Faculty</a></li>
+<li><a href="ip-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="ice.html" >Instrumentation & Control Engg</a>
+<ul>
+<li><a href="ic.html">Syllabus</a></li>
+<li><a href="ic-faculty.html">Faculty</a></li>
+<li><a href="ic-lab.html">Lab</a></li>
+</ul>
+</li>
+<li><a href="civil.html" >Civil Engg</a>
+<ul>
+<li><a href="c-course.html">Syllabus</a></li>
+<li><a href="civil-faculty.html">Faculty</a></li>
+<li><a href="civil.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="elec.html" >Electrical Engg</a>
+<ul>
+<li><a href="ee.html">Syllabus</a></li>
+<li><a href="ee-faculty.html">Faculty</a></li>
+<li><a href="ee-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="mech.html" >Mechanical Engg</a>
+<ul>
+<li><a href="me-course.html">Syllabus</a></li>
+<li><a href="me-faculty.html">Faculty</a></li>
+<li><a href="me-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="applied.html" >Applied Science and humanity</a>
+<ul>
+
+<li><a href="a-faculty.html">Faculty</a></li>
+<li><a href="ap-lab.html">Lab</a></li>
+</ul>
+</li>
+
+<li><a href="manag.html">Management</a>
+<ul>
+
+<li><a href="m-faculty.html">Faculty</a></li>
+
+</ul>
+</li>
+
+<li>
+  <a href="cont.htm" target="_blank">LIST OF CONTRACTUAL FACULTY (DIPLOMA DIVISION)</a>
+</li>
+</ul></li>
+
+<li><a href="https://www.iertonline.in/" target="_blank">Diploma Division</a></li>
+</ul></li>
+
+<li><a href="#">Facility</a>
+<ul>
+<li><a href="#">Library</a>
+<ul>
+<li><a href="central.html" >Central Library</a></li>
+<li><a href="reference.html" >Reference Library</a></li>
+<li><a href="https://ndl.iitkgp.ac.in/" >National Digital Library</a></li>
+
+
+
+</ul></li>
+
+<li><a href="health center.html" >Health Center</a></li>
+<li><a href="hostel.html" >Hostels</a>
+<ul>
+<li><a href="warden.html" >Warden</a></li>
+</ul></li>
+
+<li><a href="banking.html" >Banking</a></li>
+
+</ul></li>
+
+
+
+<li><a href="contact us.html" >Contact Us</a> </li>
+<li></li>
+
+</ul>
+
+
+
+
+
+</nav>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </header>
+
+
+
+<!-------------popup box----------------------->
+
+
+
+
+
+<div id="myModal" class="modal fade" >
+    <div class="modal-dialog" >
+        <div class="modal-content" style="width: 500px; background: #f2f2f2 ;" />
+            <div class="modal-header">
+
+<div class="row">
+
+<!--
+
+<marquee  behavior="scroll" width="100%" direction="left" height="20px" scrollamount="5">
+Students may visit the IERT campus during holidays for enquiry and admission process. 
+</marquee>
+
+--->
+
+<!---<marquee  behavior="scroll" width="100%" direction="left" height="20px" scrollamount="1">
+Enquiry No for admission process : 9793314566, 9532337374, 7905081280,  8840735587,  9694812172,  9479130432.
+</marquee>
+
+
+--->
+
+<div class="col-md-5 col-sm-5">
+
+  <img class="rounded img-fluid logo-img" src ="img/IERT1.jpg" alt="logo" />
+ </div>
+<div class="name col-md-7 col-sm-7">
+    <br><br>    
+<h5> Institute of Engineering and Rural Technology, Prayagraj (Allahabad)</h5>      
+        </div>
+      </div>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+  </div>
+            <div class="modal-body" style="font-size: 13px;">
+       
+
+<div style="background-color:white;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Faculty Recruitment in Diploma Programme of IERT 2022 </b> </h6> 
+
+
+
+     
+ 
+ <a href="Notice_Rec22PDF.zip" target="_blank"> 
+     <p>    <h8> <b>Detail Advertisement for Direct Regular Recruitment in Diploma Programme </b> </h8></a><img src="img/new.gif" /></p>
+     
+<!--      <p>    <h8> <b>The last date for Online submission of Application Form is extended upto 11.02.2022 (11.59 PM) </b> </h8></a><img src="img/new.gif" /></p>-->
+<!--     <p>    <h8> <b>The last date for submission of Hard Copy of Application Form is extended upto 18.02.2022 (5.00 PM) </b> </h8></a><img src="img/new.gif" /></p>-->
+    
+<!--<div style="background-color:white;color:red;">-->
+<!--    <div style="border: 1px solid white">-->
+
+<!--<p style="color:dark blue">   <h12> <b> Link for Online Payment for Faculty Recruitment in Diploma Programme of IERT 2022 is Closed. -->
+<!-- </b> </h12><img src="img/new.gif" />   </p>  -->
+
+
+ 
+    
+    
+ <!--<a href="Application_22Doc.zip" target="_blank"> -->
+ <!--   The Application Form for Faculty Recruitment in Diploma Programme of IERT 2022  (.doc) </a><img src="img/new.gif" /></p>-->
+      
+ <!--<a href="Application_22PDF.zip" target="_blank"> -->
+ <!--   The Application Form for Faculty Recruitment in Diploma Programme of IERT 2022  (.pdf) </a><img src="img/new.gif" /></p>-->
+    
+    
+ <!--   <a href="Guideline_Recruitment22.jpeg" target="_blank"> -->
+ <!--      <p>    <h8> <b>General Guideline to fill the online Application Form for Faculty Recruitment in Diploma Programme of IERT 2022 </b> </h8> </a><img src="img/new.gif" /></p>-->
+    
+  <!--  <a href="https://forms.gle/W4UyNkxtm8aNMaVUA" target="_blank">       
+<p>    <h8> <b>Online form for Faculty Recruitment in Diploma Programme of IERT 2022 </b> </h8> <img src="img/new.gif" />  </p>  </a>
+  -->
+  
+  
+<!--  <div style="background-color:white;color:red;">-->
+<!--    <div style="border: 1px solid white">-->
+
+<!--<p style="color:dark blue">   <h12> <b> Link for Online form for Faculty Recruitment in Diploma Programme of IERT 2022 is Closed. -->
+<!-- </b> </h12><img src="img/new.gif" />   </p>  -->
+
+
+
+  
+<marquee  behavior="scroll" width="100%" direction="left" height="20px" scrollamount="1">
+For any enquiry Recruitment related, Please mail us at recruitment@iert.ac.in  
+</marquee>
+
+  
+  
+  
+  
+  
+ <!--------              
+              
+    <div class="row">
+<div class="col-md-12 col-sm-12">
+    
+    
+    
+    <div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Faculty Recruitment in Diploma Programme of IERT 2022 </b> </h6> 
+ 
+ <a href="Notice_Rec22.pdf" target="_blank"> 
+      Notice for Direct Recruitment of Diploma IERT 2022  </a><img src="img/new.gif" /></p>
+ 
+
+ <div style="text-align: justify;">
+<div style="background-color:lightyellow;color:grey;">
+    <div style="border: 1px solid white">
+         <br>
+ <h4> <b> Direct Recruitment of Regular Teaching Post in Diploma Programme.      <img src="img/new.gif" /> </b> </h4> 
+ 
+  <div style="text-align: justify;">
+
+
+<div style="background-color:lightyellow;color:blue;">
+    <div style="border: 1px solid white">
+
+<a href="spot_admission_notice_2021-22_ne     
+ <h6> Notice of Direct Recruitment of Regular Teaching Post </h6>
+ 
+ </div> </div>
+    
+    
+    
+<!--------------
+
+<!--  <p><a href="Faculty_Interview.pdf" target="_blank"> 
+<h3> Schedule for written Test and Interview for Selection of Contract Faculty </h3> </a><img src="img/new.gif" /></p>
+
+<p><a href="litof shortlisted candidate for interview for the post of Assistant professor Management Studies.pdf" target="_blank"> 
+<h5> List of Shortlisted candidate  for Interview for the post of Assistant Professor Management Studies( Reporting Time :- 9:30 AM on 18/09/2021) </h5> </a><img src="img/new.gif" /></p>
+
+
+
+<p>Please use the Score Sheet of Academic and Research Performance for the Recruitment of Faculty.
+
+<a href="Acedmic_Form.pdf" target="_blank"> 
+ Academic Score Sheet;   </a>
+<a href="Research_Form.pdf" target="_blank"> 
+      Research Score Sheet  </a><img src="img/new.gif" /></p>
+      
+
+<p><a class="btn btn-link" href="http://iert.ac.in/Faculty%20Recruitment.html" target="_blank" />Recruitment for Engineering Degree Division</a><img src="img/new.gif"></p>
+
+-->
+<!---
+<div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Information for Degree Division  of IERT </b> </h6> </div>
+<div style="background-color:lightgrey;color:blue;">
+    <div style="border: 1px solid white">
+
+<p><a class="btn btn-link" href="https://sites.google.com/iert.ac.in/iertprayagraj/home" target="_blank" />Admission for B.TECH 1st/2nd YEAR(LATERAL ENTRY)
+SESSION 2021-22</a><img src="img/new.gif"></p>
+
+
+
+</div>
+
+</div>
+ 
+ 
+ </div>
+
+</div>
+----------->
+
+
+ <!--------------
+
+<div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Faculty Recruitment in Diploma Programme of IERT 2022  </b> </h6> </div>
+
+ <div style="text-align: justify;">
+<div style="background-color:lightyellow;color:blue;">
+    <div style="border: 1px solid white">
+         <br>
+<a href="Notice_Rec22_new.pdf" target="_blank">  
+ <h4> <b> Direct Recruitment of Regular Teaching Post in Diploma Programme.   <img src="img/new.gif" /> </h4>  </a>
+
+
+
+-->
+
+<!------ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Information for Degree Division  of IERT </b> </h6> </div>
+
+ <div style="text-align: justify;">
+<div style="background-color:lightyellow;color:blue;">
+    <div style="border: 1px solid white">
+         <br>
+
+<a href="spot_admission_notice_2021-22_new.pdf" target="_blank"> 
+ <h4> <b> Spot Admission for B.Tech First Year 2021 </h4>  </a>
+ <h6> <b>[Direct admission in few Vacant/Lapsed seats after UPCET 2021 Counseling in
+B.Tech. 1st year in IERT, Engineering Degree Division, Prayagraj  ] </a>   <img src="img/new.gif" /> </b> </h6>    
+
+       <h8> <b>Interested candidates must register himself on AKTU website <a href="https://aktu.ac.in/" target="_blank">  <h8 style="color:darkGreen;"> www.aktu.ac.in </h8> </a>
+through popup window (go to Regarding Registration for the Admission under
+various course for session 2021-22) for vacant/Lapsed seats. Only registered
+Candidate will be eligible for admission on above vacant/Lapsed seats. Interested
+candidates are required to fill the Google form on link  &emsp;
+
+<a href="https://forms.gle/mSg2tRfbDCmmje1fA" target="_blank">  <h8 style="color:darkGreen;">       
+https://forms.gle/mSg2tRfbDCmmje1fA 
+</h8>
+</a>
+<br>
+
+And upload all requisite documents latest by
+28/11/2021 upto 03:00 PM. If any candidates feel trouble regarding AKTU registration
+or Google Form submission then he/she may come on institute and contact to
+admission help desk from 24/11/2021 to 28/11/2021 upto 4.00 PM    </a>   <img src="img/new.gif" /> </b> </h8> 
+       
+ </div>       
+<!---
+<a href="img/P3.jpg" target="_blank"> 
+ <h6> <b>Direct Admission in B. Tech. 1st Year  </a>   <img src="img/new.gif" /> </b> </h6> 
+
+<br>
+
+
+<div style="background-color:lightgrey;color:blue;">
+    <div style="border: 1px solid white">
+
+<h6> <b>Direct Admission Notice for the Vacant Seats / Drop Out Seats in B.Tech Courses for the session 2021-22.</a><img src="img/new.gif"   </b> </h6> </div>
+
+
+
+
+
+
+ 
+ 
+<div style="background-color:lightyellow;color:blue;">
+    <div style="border: 1px solid white">
+         <br>
+<a href="img/P2.jpg" target="_blank"> 
+ Notice for the detail information of the  Vacant Seats / Drop Out Seats in B.Tech Courses for the session 2021-22.;  </a>   <img src="img/new.gif" /> 
+
+<br>
+
+ <br>
+<a href="https://forms.gle/uW7h1rhzLzVzk3iq8" target="_blank">    Interested Candidates for the  Vacant Seats / Drop Out should apply through given Google form;  </a>    <img src="img/new.gif" /> </button></div>
+
+ 
+
+<!---
+<div class="col-md-9 col-sm-9">
+<div class="card">
+<div class="card-body">
+    <div class="row">
+
+
+
+----->
+
+<hr>
+<div style="background-color:lightgrey;color:Grey;">
+    <div style="border: 1px solid white">
+
+<h6>Students Achievement</h6>
+  
+ </div>
+ </div>
+  <div style="text-align: justify;">
+  <p> The main objective of studnets achievement includes inclusive develeopmet of them.  Over four years' time, we measure Student's achievement in terms of all kind of events within the campus. 
+  It incluudes the performance in the academic learning as well as in the sports and  the cutural events. 
+
+ </p>
+
+<h8> <b><a href="https://www.youtube.com/watch?v=Gy3CTlNKS_Q">  <h8 style="color:darkGreen;"> Year 2020-21 Events  </h8> </a>
+
+
+
+
+
+
+
+<hr>
+<div style="background-color:lightgrey;color:Grey;">
+    <div style="border: 1px solid white">
+
+<h6>Placements</h6>
+  
+ </div>
+ </div>
+  <div style="text-align: justify;">
+  <p>The main objective of training and placement cell is to provide world class training as well as best job opportunities to the students of institution  .
+
+ </p>
+  <p> Some of our recruiters are : </p> 
+<!---
+</div>
+
+--->
+<script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+
+<!-------------Slider Start------------------------>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 1000,
+              $SlideDuration: 3000,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 140,
+              $Align: 0
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+<!------------------------------region responsive code begin--------->
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+
+
+
+
+
+
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+ @keyframes jssorl-009-spin {
+
+    from {
+     transform: rotate(0deg); }
+to { transform: rotate(360deg); 
+
+}
+        }
+    </style>
+    <div id="jssor_1" style="position:relative;width:880px;height:100px;overflow:hidden;visibility:hidden;">
+
+
+
+
+
+
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;width:80%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+
+            <img style="margin-top:-19px;position:relative;top:50%;width:8px;height:38px;" src="img/spin.svg" />
+        </div>
+
+        <div data-u="slides" style="cursor:default;position:relative;width:880px;height:100px;overflow:hidden;">
+            
+
+             <div data-p="30.00">
+                <img data-u="image" src="img/tcs.jpg" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/wip.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/inf.png" />
+            </div>
+           
+            <div data-p="30.00">
+                <img data-u="image" src="img/hcl.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/mahi.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/acc.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/avi.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/lt.jpg" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/syn.jpg" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/009.png" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/sim.jpg" />
+            </div>
+            <div data-p="30.00">
+                <img data-u="image" src="img/012.jpg" />
+            </div>
+             <div data-p="30.00">
+                <img data-u="image" src="img/013.png" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!--  Slider End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+<div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Information for Degree Division  of IERT </b> </h6> </div>
+<div style="background-color:lightgrey;color:blue;">
+    <div style="border: 1px solid white">
+
+<h8> <b>The  classes  of the first semester  will be started from 15/11/2021 for the session 2021-22.</a><img src="img/new.gif"   </b> </h8> </div>
+
+
+ 
+<div style="background-color:white;color:red;">
+    <div style="border: 1px solid white">
+<a href="Notice2021/FirstSemClass11Nov21.pdf" target="_blank"> 
+ Notice for the detail information of the  classes  of the first semester for the session 2021-22;  </a>   <img src="img/new.gif" /> 
+
+<br>
+
+
+
+
+
+<div style="background-color:lightgrey;color:blue;">
+    <div style="border: 1px solid white">
+<h8> <b>Admission for B.TECH 1st/2nd YEAR(LATERAL ENTRY)
+SESSION 2021-22 </b> </h8> </div>
+
+<div style="background-color:white;color:red;">
+    <div style="border: 1px solid white">
+<a href="https://sites.google.com/iert.ac.in/iertprayagraj/home" target="_blank"> 
+  Application of B.Tech courses for  Session 2021-22;   />
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+  </div>
+
+</div>
+ 
+ 
+ </div>
+
+</div>
+
+ <p>
+ 
+ </p>
+</div>
+
+</div>
+
+<div style="background-color:grey;color:black;">
+    <div style="border: 1px solid white">
+<h6> <b>Information for Diploma Division  of IERT </b> </h6> </div>
+<div style="background-color:lightgrey;color:blue;">
+    <div style="border: 1px solid white">
+<!---
+<h8> <b>Walk-In-Interview  of Guest Faculty for IERT Prayagraj Diploma Division. </b> </h8> </div>
+
+<div style="background-color:white;color:red;">
+    <div style="border: 1px solid white">
+<a href="DiplomaGuestFaculty_Notice.pdf" target="_blank"> 
+ Notice for Walk-In-Interview  of Guest Faculty ;   </a><img src="img/new.gif" />
+ 
+--->
+  </div>
+
+</div>
+ 
+ 
+ </div>
+
+</div>
+
+ <p>
+ 
+ </p>
+</div>
+
+</div>
+
+<!----------------
+
+
+        
+           <div class="col-md-4 col-sm-4"> 
+
+  <button type="submit" class="btn btn-primary" style=" background-color: #a3c2c2;" >
+  <a href="https://erp.aktu.ac.in/WebPages/Public/Students/PREENRegisthttps://forms.gle/Cvj5BDQFrrvmxHzx6rations/frmInstructions.aspx " target="_blank">Click Here </a></button></div>
+
+--------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <section>
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <div id="iert_imgs" class="carousel slide" data-ride="carousel">
+
+
+
+
+ <ul class="carousel-indicators">
+
+<li data-target="#iert_imgs" data-slide-to="0" class="active"></li>
+             
+ <li data-target="#iert_imgs" data-slide-to="1"></li>
+
+<li data-target="#iert_imgs" data-slide-to="2"></li>
+
+<li data-target="#iert_imgs" data-slide-to="3"></li>
+
+
+<li data-target="#iert_imgs" data-slide-to="4"></li>
+
+
+<li data-target="#iert_imgs" data-slide-to="5"></li>
+
+
+            </ul>
+
+
+
+<div class="carousel-inner">
+
+
+
+<div class="carousel-item active">
+<img src="img/f.jpeg" width="800px" height="400px"/>
+    </div>
+
+
+
+
+<div class="carousel-item">
+<img src="img/t11.JPG" width="800px" height="400px"/>
+<div class="carousel-caption"><h3>Technovation-2K18</h3></div>
+</div>
+
+
+
+
+
+
+
+<div class="carousel-item">
+<img src="img/dip.jpeg" width="800px" height="400px"/>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="carousel-item">
+<img src="img/t (2).JPG" width="800px" height="400px"/>
+<div class="carousel-caption"><h3>Udbhav-2K17</h3></div>
+</div>
+
+
+<div class="carousel-item">
+<img src="img/t (12).JPG" width="800px" height="400px"/>
+<div class="carousel-caption"><h3>IERT Innovation: Disinfection Sanitization Tunnel </h3></div>
+</div>
+
+
+<div class="carousel-item">
+<img src="img/t (0).JPG" width="800px" height="400px"/>
+<div class="carousel-caption"><h3>AKTU TOPPER-2020: ASTHA KUSHWAHA </h3></div>
+</div>
+
+<div class="carousel-item">
+<img src="img/t (4).JPG" width="800px" height="400px"/>
+<div class="carousel-caption"><h3>Udbhav-2K18</h3></div>
+</div>
+
+  </div>
+  <a class="carousel-control-prev" href="#iert_imgs" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+            </a>
+
+
+<a class="carousel-control-next" href="#iert_imgs" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+            </a>
+
+
+
+          </div>
+        
+</div>
+
+
+
+
+
+<!----------------Announcement and Buttons-------------------->
+
+
+
+<div class="col-md-4 col-sm-2">
+
+
+
+<h3 class="btn btn-info btn-block">ANNOUNCEMENTS</h3>
+<hr>
+<marquee direction="up" behavior="alternate" scrolldelay="400" height="280px" width="300px"> 
+
+<p><a href="Faculty_Interview.pdf" target="_blank">
+<h3> Schedule for written Test and Interview for Selection of Contract Faculty  </h3> </a><img src="img/new.gif" /></p>
+
+<p><a href="ac.pdf" target="_blank">
+Academic Calender for Odd Semester </a><img src="img/new.gif" /></p>
+
+
+<p><a  href="http://iert.ac.in/Faculty%20Recruitment.html" target="_blank" />Faculty  Recruitment for Engineering Degree Division</a><img src="img/new.gif"></p>
+
+<p><a  href="https://www.mohfw.gov.in/" target="_blank" />
+Updates By Health & Family Welfare Ministry-COVID-19
+</a></p>
+
+
+<p><a  href="btn btn-link" href="http://www.iert.ac.in/Achievements%20Awards.html" target="_blank" />
+Achievements & Awards
+</a><img src="img/new.gif"></p>
+
+<p><a href="fst.pdf"> 
+ II Online  Sessional examination for B.Tech 1st year and 2nd year  students 
+</a><img src="img/new.gif"></p>
+
+<p><a  href="https://forms.gle/LvbKYGa8K2dyKq3T9" target="_blank" /> 
+Caution Money Refund Application for all B.tech. Passout Students 
+</a><img src="img/new.gif"></p>
+
+
+</marquee>
+
+<div style="padding-left: 12px; padding-right: 10px;">
+<aside class="mt-1">
+<div class="row">
+<div class="btn-group btn-block" role="group"><a class="btn btn-info btn-block mr-1" href="https://upsee.nic.in" target="_blank">UPSEE</a> <a class="btn btn-info mr-1" href="ad.html">ADMISSIONS</a> <a class="btn btn-info mr-1" href="http://mail.google.com/a/iert.ac.in" target="_blank">WEBMAIL</a></div>
+
+
+</div>
+<!--------------------
+            <th width="25%" >
+             <button class="button">
+            <a href="academic portal.html">ACADEMIC portal</a></button>
+            </th>
+            ------></aside>
+</div>
+</div>
+</div>
+</section>
+<!--------------------------Side Table Start------------------------------>
+
+<main class="mt-5">
+<div class="row">
+<div class="col-md-3 col-sm-3">
+<div class="list-group" id="list-tab" role="tablist">
+<div class="gallery">
+<div style="background: #b3cccc;font-size: 20px;">Director&#39;s Desk</div>
+<a href="img/director.jpg" target="_blank"><img alt="image not found" height="200" src="img/director.jpg" width="300" /> </a>
+
+<div class="desc">
+<div style="text-align: justify;">Our objective is to prepare leaders, who go beyond conventional technical skills. IERT is a developing high quality institute of international standards in order to meet the needs of the fast changing 21<sup>st</sup> century world.
+<p></p><p>Dr. Vimal Mishra</p>
+<div style="padding-left: 100px; font-size: 15px; ">
+</div>
+</div>
+</div>
+</div>
+<a class="list-group-item list-group-item-action" href="Faculty Recruitment.html">Recruitment<img src="img/new.gif"></a><a class="list-group-item list-group-item-action" href="Anti Ragging.html">Anti Ragging</a> <a class="list-group-item list-group-item-action" href="computer center.html">Computer Center</a>
+
+<details><summary class="list-group-item list-group-item-action"> Student Corner</summary> <a class="list-group-item list-group-item-action" href="Notice Board.html">Notice</a> <a class="list-group-item list-group-item-action " href="Technovation.html">Technovation-2K18</a> <a class="list-group-item list-group-item-action " href="Udbhav.html">Udbhav-2K17</a> <a class="list-group-item list-group-item-action " href="Achievement.html">Achievement</a> <a class="list-group-item list-group-item-action " href="Document Formats.html">Document Formats</a></details>
+<a class="list-group-item list-group-item-action" href="Alumni.html">Alumni</a> <a class="list-group-item list-group-item-action" href="Placements.html">Placements</a> <a class="list-group-item list-group-item-action" href="R&amp;C.html">R&amp;C</a> <a class="list-group-item list-group-item-action" href="NIRF.html">NIRF</a><a class="list-group-item list-group-item-action" href="Faculty Corner.html">Tender Notice<img src="img/new.gif"></a>
+
+<details><summary class="list-group-item list-group-item-action"> Important Links</summary> <a class="list-group-item list-group-item-action" href="https://www.aicte-india.org/" target="_blank"> AICTE</a> <a class="list-group-item list-group-item-action " href="http://csirhrdg.res.in/" target="_blank"> CSIR</a> <a class="list-group-item list-group-item-action" href="https://www.online-inspire.gov.in/" target="_blank"> DST</a> <a class="list-group-item list-group-item-action " href="http://mhrd.gov.in/" target="_blank"> MHRD</a> <a class="list-group-item list-group-item-action" href="https://ugc.ac.in/" target="_blank"> UGC</a></details>
+<a class="list-group-item list-group-item-action" href="Downloads.html">Downloads</a> <a class="list-group-item list-group-item-action " href="Administration Notifications.html">Administration Notifications</a> <a class="list-group-item list-group-item-action" href="Achievements Awards.html">Achievements/Awards</a> <a class="list-group-item list-group-item-action" href="rti.html">RTI Act</a></div>
+</div>
+<!------------------------Side table Stop--------------------------->
+
+<div class="col-md-9 col-sm-9">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<h4>CONFERENCE &amp; SEMINARS</h4>
+</div>
+
+<hr />
+<div class="row"><a class="btn btn-link" href="https://aktu.ac.in/faculty_devlpmnt_program.html" target="_blank">Faculty Development Program </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="btn btn-link" href="seminar.pdf" target="_blank">Seminar on Teaching and Learning Methods</a></div>
+
+<div class="row mt-4">
+<h4>E-CONNECT</h4>
+</div>
+
+<hr />
+<div class="row">
+<div class="col-md-3 col-sm-3">
+<figure class="figure"><a href="http://nptel.ac.in/" target="_blank"><img class="figure-img img-fluid rounded" src="img/n1.jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://nptel.ac.in/" target="_blank">NPTEL</a></figcaption>
+<a href="http://nptel.ac.in/" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<figure class="figure"><a href="Notice Board.html"><img class="figure-img img-fluid rounded" src="img/no6.jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="Notice Board.html">Notice board</a></figcaption>
+<a href="Notice Board.html"> </a></figure>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<figure class="figure"><a href="Womens Grievance Portal.html"><img class="figure-img img-fluid rounded" src="img/gr.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="Womens Grievance Portal.html">Women Grievance Portal</a></figcaption>
+<a href="Womens Grievance Portal.html"> </a></figure>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<figure class="figure"><a href="pgrivance.html"><img class="figure-img img-fluid rounded" src="img/p.jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="pgrivance.html">Public Grievance Cell</a></figcaption>
+<a href="pgrivance.html"> </a></figure>
+</div>
+</div>
+<!--------------
+          <table style="width:99%">  
+                <tr>
+                  <th colspan="4" style=" letter-spacing: 1.5px;  text-shadow: 0 -1px 0 #f2f2f2; position: relative;  font-size: 18px;" ><h3>COLLABORATION</h3><hr></th>  
+                </tr>  
+                <tr>                 
+                  <td>
+                <a href="#">
+              <img src="img/h.jpg" style="height:47%; width:80%;"><h6> Other Institutes             
+              </a>
+                </td>  
+                  <td>
+                <a href="#">
+              <img src="img/i.jpg" style="height:55%; width:75%;"><br><h6> International
+              </a>
+                </td>  
+              <td>
+              <a href="#">
+              <img src="img/nm.jpg" style="height:44%; width:80%;"><br><h6> NMEICT
+              </a>
+              </td>
+              <td>
+              <a href="#">
+              <img src="img/gn.jpg" style="height:42%; width:86%;"> <br><h6> GIAN   
+              </a>
+              </td>
+                </tr>  
+              </table>
+              <br>
+              </td></tr>
+              --------------->
+
+<div class="row mt-4">
+<h4>AFFILIATION</h4>
+</div>
+
+<hr />
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="https://www.aicte-india.org/" target="_blank"><img class="figure-img img-fluid rounded" src="img/aicte.jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="https://www.aicte-india.org/" target="_blank">AICTE</a></figcaption>
+<a href="https://www.aicte-india.org/" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-6 col-sm-6" style="padding-left: 50px;">
+<figure class="figure"><a href="https://aktu.ac.in/" target="_blank"><img class="figure-img img-fluid rounded" src="img/aktu.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="https://aktu.ac.in/" target="_blank">AKTU</a></figcaption>
+<a href="https://aktu.ac.in/" target="_blank"> </a></figure>
+</div>
+</div>
+
+<div class="row mt-4">
+<h4>RASHTRIYA ABHIYAAN</h4>
+</div>
+
+<hr />
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://mhrd.gov.in/rashtriya-avishkar-abhiyan" target="_blank"><img class="figure-img img-fluid rounded" src="img/download.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://mhrd.gov.in/rashtriya-avishkar-abhiyan" target="_blank">Rashtriya Avishkar Abhiyaan</a></figcaption>
+<a href="http://mhrd.gov.in/rashtriya-avishkar-abhiyan" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="https://www.vidyalakshmi.co.in/Students/" target="_blank"><img class="figure-img img-fluid rounded" src="img/images (1).jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="https://www.vidyalakshmi.co.in/Students/" target="_blank">Vidya Lakshmi</a></figcaption>
+<a href="https://www.vidyalakshmi.co.in/Students/" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://digitalindia.gov.in/" target="_blank"><img class="figure-img img-fluid rounded" src="img/download (1).png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://digitalindia.gov.in/" target="_blank">Digital India Programme</a></figcaption>
+<a href="http://digitalindia.gov.in/" target="_blank"> </a></figure>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://unnat.iitd.ac.in/index.php/Pages/display/index"><img class="figure-img img-fluid rounded" src="img/images.jpg" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://unnat.iitd.ac.in/index.php/Pages/display/index">Unnat Bharat Abhiyaan</a></figcaption>
+<a href="http://unnat.iitd.ac.in/index.php/Pages/display/index"> </a></figure>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://www.makeinindia.com/home" target="_blank"><img class="figure-img img-fluid rounded" src="img/m.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://www.makeinindia.com/home" target="_blank">Make In India</a></figcaption>
+<a href="http://www.makeinindia.com/home" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://www.skilldevelopment.gov.in/pmkvy.html" target="_blank"><img class="figure-img img-fluid rounded" src="img/si.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://www.skilldevelopment.gov.in/pmkvy.html" target="_blank">Skill India</a></figcaption>
+<a href="http://www.skilldevelopment.gov.in/pmkvy.html" target="_blank"> </a></figure>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="https://www.startupindia.gov.in/" target="_blank"><img class="figure-img img-fluid rounded" src="img/s.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="https://www.startupindia.gov.in/" target="_blank">Startup India</a></figcaption>
+<a href="https://www.startupindia.gov.in/" target="_blank"> </a></figure>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<figure class="figure"><a href="http://www.online-inspire.gov.in/" target="_blank"><img class="figure-img img-fluid rounded" src="img/dst-logo.png" style="height: 100px" /> </a>
+
+<figcaption class="figure-caption text-center text-primary"><a href="http://www.online-inspire.gov.in/" target="_blank">DST-INSPIRE</a></figcaption>
+<a href="http://www.online-inspire.gov.in/" target="_blank"> </a></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<div style="padding-left: 18px; padding-right: 13px;">
+<footer>
+<div class="row mt-4" style="background-color:#a3c2c2;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+<p>&copy;<a href="index.html"> Institute of Engineering and Rural Technology</a> 26, Chatham line, Allahabad - 211002,UP, INDIA &nbsp;&nbsp;&nbsp; <a href="contact us.html"> Contact</a> &nbsp;&nbsp;&nbsp; Telephone No.: (+91)-0532-2544810</p>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>
